@@ -5,7 +5,9 @@ import Head from "/src/components/head"
 import Header from "/src/components/header"
 import IconLinks from "/src/components/iconLinks"
 
-var myFaceImg = require('/src/images/Taussig.png')
+
+
+var myFaceImg = require('/src/images/taussig.png')
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -20,9 +22,9 @@ const body = {
 	color: "#eeeeee",
 	backgroundColor: "#20272F",
   }
-
+  
 // ----------------------------------------------------------------------------------------------------------
-
+ 
 export default function Home() {
   return (
     
@@ -63,9 +65,22 @@ export default function Home() {
 
 		<IconLinks />
 
+
 	</div>
 
     // </div>
 
   );
 }
+
+
+
+// export const query = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+// `

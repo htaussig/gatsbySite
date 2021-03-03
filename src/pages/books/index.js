@@ -4,6 +4,7 @@ import "/src/styles/global.css"
 import Head from "/src/components/head"
 import Header from "/src/components/header"
 import IconLinks from "/src/components/iconLinks"
+import BookPostsPreview from "/src/components/bookPostsPreview"
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
 
 
 			<div id="bookDiv">
-				<div>
+				<div style={{color: "gray"}}>
 					<h2><u>Books Notes</u></h2>
 
 					<p>Takeaways from the books I read (Starting from 2021) 
@@ -25,7 +26,11 @@ export default function Home() {
 					</p>
 				</div>
 
-				<div class="bookList">
+				<hr></hr>
+
+				<BookPostsPreview />
+
+				{/* <div class="bookList">
 					<a href="anything/">Anything You Want</a>
 				<br></br><br></br>
 					<a href="mapAndTerritory/">Map and Territory</a>
@@ -35,7 +40,7 @@ export default function Home() {
 					<a href="DoingGoodBetter/">Doing Good Better</a>
 				<br></br><br></br>
 					<a href="moralLandscape/">The Moral Landscape</a>
-				</div>
+				</div> */}
 			</div>	
 
 		</div>

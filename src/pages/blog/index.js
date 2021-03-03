@@ -4,8 +4,14 @@ import "/src/styles/global.css"
 import Head from "/src/components/head"
 import Header from "/src/components/header"
 // import IconLinks from "../../components/iconLinks"
+import BlogPostsPreview from "/src/components/blogPostsPreview"
 
-export default function Home() {
+// import { Link, graphql } from "gatsby"
+
+
+
+
+export default function Home({ data }) {
 	return (
 
 	<div>
@@ -18,13 +24,10 @@ export default function Home() {
 			<br></br>
 			</div>
 
-			<div class="blogPostList">
-				{/* <!-- <a href="whyIWrite/">Why I Write</a> 
-				</br></br> --> */}
-				<a href="internetHumans/">The Internet is Full of Humans</a> 
-				<br></br><br></br>
-				<a href="vipassana/">Only Meditating for 10 days</a>
-			</div>
+			
+			<BlogPostsPreview />
+			
+
 		</div>
 
 	
